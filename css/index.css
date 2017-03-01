@@ -1,0 +1,97 @@
+@media screen and (min-width:800px){/*uc不支持*-device-width*/
+  html{ font-size: 10px;}
+  .line{ width: 400px;}
+}
+@media screen and (max-width:799px){
+  html{ font-size: 8px;}
+  .line{ width: 200px;}
+  .mobileDiv{ display: none;}
+}
+
+.BGCanvas{
+  position: fixed;
+  top: 0;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  margin: -15rem 0 0 0; padding: 0;
+  width: 100%; height: 30rem;
+}
+.icon{
+  line-height: 6rem;
+  letter-spacing: 3px;
+  font-family: 微软雅黑;
+  font-size: 4.6rem;
+  color: #333;
+  text-align: center;
+}
+.aboutMe>p{
+  margin: 0; padding: 0;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.line{
+  margin: 10px auto 0;
+  height: 2px;
+  background: #91E0A5;
+}
+.text-align *{
+  text-align: center;
+}
+.container{
+  margin-top: 10px;
+}
+.container *{
+  padding: 0;
+}
+.container a{
+  border: none;
+  font-size: 1.8rem;
+  color: #888888;
+}
+.container a:hover{
+  color: #91E0A5;
+}
+
+
+.remarks{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
+.remarks > div{
+  position: relative;
+  margin: 0;
+  height: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+.QRCode, .mailLink{
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+}
+.QRCode{
+  top: -12rem; left: 50%;
+  margin: 0 0 0 -6rem;
+  width: 12rem; height: 12rem;
+  text-align: center;
+}
+.mailLink{
+  top: -6rem; left: 50%;
+  margin: 0 0 0 -12rem;
+  width: 24rem; height: 6rem;
+  text-align: center;
+}
+
+/*.mobile:hover + .QRCode{
+  display: block;
+}
+.mail:hover + .mailLink{
+  display: block;
+}*/

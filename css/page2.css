@@ -1,0 +1,91 @@
+/*
+#page2{
+  display: none;
+  opacity: 0;
+  transition: all 2s;
+}
+header{
+  position: relative;
+  width: 100%; height: 100%;
+}
+header img{
+  display: block;
+  max-width: 1540px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-device-width:1079px) and (orientation:portrait){
+  header img{
+    display: none;
+  }
+}
+
+#icon_button{
+  position: absolute;
+  z-index: 102;
+  display: block;
+  border: none; outline: none;
+  background: none;
+  cursor: pointer;
+}
+#icon,#icon_button{
+  position: absolute;
+  top: 0; left: 50%;
+  margin: -150px 0 0 -150px;
+  width: 300px; height: 300px;
+}
+canvas{
+  font-size: 18px;
+  text-align: center;
+}
+#icon_bg{
+  position:absolute;
+  top: 50%;  left: 50%;
+  margin: -150px 0 0 -120px;
+  width: 240px; height: 200px;
+  border-radius: 10px;
+  background: rgba(148,204,231,0.6);
+  transition: background 1s;
+}
+#icon_button:hover + #icon > #icon_bg{
+  background: rgba(148,204,231,0.9);
+}
+
+#icon_bg p{
+  width: 100%;
+  margin: 60px 0 0 0;
+  font-family: 方正兰亭超细黑简体;
+  font-size: 40PX; font-weight: bold;
+  text-align: center;
+}
+
+#tips{
+  position: absolute;
+  bottom: 0; left: 50%;
+  margin: 0 0 0 -150px;
+  overflow: hidden;
+}
+#tips p{
+  display: block;
+  margin: 10px 0 0 0;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#preface{
+  width: 100%;
+  overflow: hidden;
+}
+#preface p{
+  display: block;
+  margin: 10px 0 0 0;
+  width: 100%;
+  font-size: 24px;
+  word-spacing: 5px; font-width: bold;
+  text-align: center;
+}
+#long{
+  height: 2000px;
+}
+*/

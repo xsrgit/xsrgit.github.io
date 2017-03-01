@@ -1,0 +1,26 @@
+@font-face{
+  font-family : road_rage;
+  src: url("../font/road_rage.otf")
+}
+*{
+  margin: 0; padding: 0;
+}
+a{
+  padding-bottom: 1px;
+  border-bottom: 1px solid #91E0A5;
+  color: #91E0A5;
+  text-decoration: none;
+  transition: color 0.5s, border 0.5s;
+}
+a:hover,a:focus,a:active{
+  border-color: #888888;
+  color: #888888;
+  text-decoration: none;
+}
+html,body{
+  position: relative;
+  height: 100%;
+  user-select: none;
+  font-family: "微软雅黑";
+  color: #888888;
+}
