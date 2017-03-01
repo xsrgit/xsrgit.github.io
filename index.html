@@ -1,166 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="Description" content="这是一个记录程序开发心得的个人网站。">
+  <meta charset="utf-8">
 
-<title>Xhj · Think 个人网站</title>
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-responsive.css">
-<link rel="stylesheet" id="publicStyle" href="css/public.css">
-<link rel="stylesheet" href="css/index.css">
-<!--[if IE 8]>
   <style>
-    body{
-      background: #999;
-    }
-  </style>
-<![endif]-->
-
-<script src="js/module.js"></script>
+</style>
 </head>
 
-<body id="body" style="padding: 0;"><!--bootstrap莫名添加padding-->
-<canvas class="BGCanvas" id='BGCanvas'>你在使用过旧的浏览器。</canvas>
+<body>
+<style>
 
-<div class="content" id="content">
-  <h1 class="icon" id="icon">XHJ·THINK</h1>
-  <article class="aboutMe">
-    <p>我是 <a href="#" name="a1">邢恒健</a>，从事前端开发。</p>
-    <p>这是我的个人网站，记录创作中的想法。</p>
-  </article>
-  <div class="line" id="line"></div>
-  <div class="container">
-    <div class="row text-align">
-      <div class="col-sm-1 col-sm-offset-4"><a href="#" name="a2">- 博客 -</a></div>
-      <div class="col-sm-2"><a href="#" name="a2">- 项目 -</a></div>
-      <div class="col-sm-1"><a href="#" name="a2">- 关于我 -</a></div>
-    </div>
-  </div>
-</div>
-
-
-<footer class="remarks">
-  <div class="mobileDiv">
-    <a href="#" class="mobile" id="mobile">移动端</a>
-    <div class="QRCode" id="QRCode" name="a1" style="display: none;"><img src="img/mobile.png"></div>
-  </div>
-  <div class="mailDiv">
-    期待你的建议，可发送至 <a href="#" class="mail" id="mail" name="a1">xhjyewu@126.com</a>
-    <div class="mailLink" id="mailLink" style="display: none;">126 163 Foxmail Gmail QQ邮箱 新浪邮箱</div>
-  </div>
-  <div>个人创作 2016-2017</div>
-  <div></div>
-</footer>
+</style>
+<div>嘿嘿，找到了网页放上网的方法</div>
+<a href="index2.html">点击</a>
 
 
 <script>
-/*  var msg = getUC();
-  if(msg == true){
-    var a1 = document.getElementsByName('a1');
-    for (var i = 0; i < a1.length; i++){
-      var num = i.toString();
-      a1[i].ontouchstart = function (e){
-        var e = e;
-        e.stopPropagation();
-        this.style.color = '#888888';
-      }
-      a1[i].ontouchend = function (e){
-        var e = e;
-        e.stopPropagation();//停止冒泡
-        this.style.color = '#91E0A5';
-      }
-    }
-    var a2 = document.getElementsByName('a2');
-    for (var i = 0; i < a2.length; i++){
-      var num = i.toString();
-      a2[i].ontouchstart = function (e){
-        var e = e;
-        e.stopPropagation();
-        this.style.color = '#91E0A5';
-      }
-      a2[i].ontouchend = function (e){
-        var e = e;
-        e.stopPropagation();//停止冒泡
-        this.style.color = '#888888';
-      }
-    }
-  }*/
 
-  function aTouch(id){
-    var temp = getDom(id);
-    temp.style.color = "#888888";
-  }
-  function aTouch2(id){
-    var temp = getDom(id);
-    temp.style.color = "#91E0A5";
-  }
-
-  if(ifOldIE(12) == true){
-    getDom("#icon").style.fontFamily = '微软雅黑';
-  }
-
-  if(window.innerWidth > 800){
-    var bezierCurve = new BezierCurve('#BGCanvas', 250, 16, 10);
-    bezierCurve.start();
-    bezierCurve.addListener();
-  }
-  else{
-    var atom = new Atom('#BGCanvas', 6, 10, 5, 33);
-    atom.start();
-    /*    var popArtCircle = new PopArtCircle('bezierCurve', 0.5, 2, 2, '#fff', 'rgba(144, 224, 165, 0.3)', 2000);
-     popArtCircle.start();*/
-  }
-
-  function showHideDiv(id, hide){
-    var div = getDom(id);
-    var hide = hide;
-    if(div.style.display == 'block' || hide == true){
-      div.style.display = 'none';
-    }
-    else{ div.style.display = 'block'}
-  }
-  window.onload = function(){
-    var mobile = getDom('#mobile');
-    var mail  = getDom('#mail');
-    var body = getDom('#body');
-
-    var a = document.getElementsByTagName('a');
-    for(var i = 0;i < a.length;i++){
-      a[i].onclick = function(e){
-        /*var e = e || window.event;//IE9不需要window.event对象*/
-        var e = e;
-        e.stopPropagation();//停止冒泡
-      }
-    }
-    mobile.addEventListener('click',function(event){
-      showHideDiv('#mailLink',true);
-      showHideDiv('#QRCode',false);
-    });
-    mail.addEventListener('click',function(event){
-      showHideDiv('#QRCode',true);
-      showHideDiv('#mailLink',false);
-    });
-    body.addEventListener('click',function(event){
-      var e = event;
-      e.stopPropagation();
-      showHideDiv('#QRCode',true);
-      showHideDiv('#mailLink',true);
-    });
-    /*    mobile.onclick = function(e){
-     showHideDiv('QRCode',false);
-     var e = e;
-     e.stopPropagation();
-     }*/
-  }
 </script>
-
-
-<script src="js/jquery-1.12.1.js"></script>
-<script src="js/bootstrap.js"></script>
 </body>
 </html>
